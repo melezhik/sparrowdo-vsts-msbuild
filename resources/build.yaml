@@ -1,0 +1,8 @@
+- task: MSBuild@1
+  displayName: Build project [% project %]
+  inputs:
+    solution: '[% project %]'
+    platform: [% platform %]
+    configuration: [% configuration %]
+    msbuildArguments: '/p:OutDir="$(build.artifactstagingdirectory)"'
+
