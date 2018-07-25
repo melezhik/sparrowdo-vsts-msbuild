@@ -19,7 +19,7 @@ our sub tasks (%args) {
     variables => %( 
       project => %args<project>,
       platform => %args<platform>,
-      configuration => %args<configuration> || 'debug',
+      configuration => %args<configuration>,
     )
   );
 
