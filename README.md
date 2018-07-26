@@ -9,6 +9,7 @@ Sparrowdo module to generate VSTS yaml steps for msbuild tool.
       project   => "Database.sqlproj", # Relative path from repo root of the project(s) or solution(s) to run. 
       configuration => "debug",  # Build configuration, default value
       platform => "any cpu", # Build platform, default value 
+      display-name => "Build app.csproj", # optional
     );
 
     $ sparrowdo --local_mode --no_sudo
