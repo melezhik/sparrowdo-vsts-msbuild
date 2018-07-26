@@ -1,6 +1,6 @@
 use v6;
 
-unit module Sparrowdo::VSTS::YAML::MsBuild:ver<0.0.1>;
+unit module Sparrowdo::VSTS::YAML::MsBuild:ver<0.0.2>;
 
 use Sparrowdo;
 use Sparrowdo::Core::DSL::Template;
@@ -20,6 +20,7 @@ our sub tasks (%args) {
       project => %args<project>,
       platform => %args<platform>,
       configuration => %args<configuration>,
+      display_name => %args<display-name> || "MsBuild %args<project>"
     )
   );
 
