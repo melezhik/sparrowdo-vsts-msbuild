@@ -2,11 +2,11 @@
   displayName: [% display_name %]
   inputs:
     solution: '[% project %]'
-    [% IF platform %]
+    [%- IF platform %]
     platform: [% platform %]
-    [% END %]
-    [% IF configuration %]
+    [%- END %]
+    [%- IF configuration %]
     configuration: [% configuration %]
-    [% END %]
+    [%- END %]
     msbuildArguments: '/p:OutDir="\$(build.artifactstagingdirectory)"'
 
